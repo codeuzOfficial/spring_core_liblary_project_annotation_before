@@ -1,0 +1,59 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean name="mainController" class="dasturlash.uz.controller.MainController" autowire="byName"/>
+
+    <bean name="adminController" class="dasturlash.uz.controller.AdminController" autowire="byName"/>
+
+    <bean name="bookController" class="dasturlash.uz.controller.BookController" autowire="byName"/>
+
+    <bean name="categoryController" class="dasturlash.uz.controller.CategoryController" autowire="byName"/>
+
+
+    <bean name="profileController" class="dasturlash.uz.controller.ProfileController" autowire="byName"/>
+
+
+    <bean name="staffController" class="dasturlash.uz.controller.StaffController" autowire="byName"/>
+
+
+    <bean name="studentController" class="dasturlash.uz.controller.StudentController" autowire="byName"/>
+
+
+    <bean name="studentProfileController" class="dasturlash.uz.controller.StudentProfileController" autowire="byName"/>
+
+    <bean name="authService" class="dasturlash.uz.service.AuthService" autowire="byName"/>
+
+
+    <bean name="bookService" class="dasturlash.uz.service.BookService" autowire="byName"/>
+
+
+    <bean name="categoryService" class="dasturlash.uz.service.CategoryService" autowire="byName"/>
+
+
+    <bean name="initService" class="dasturlash.uz.service.InitService" autowire="byName"/>
+
+
+    <bean name="profileService" class="dasturlash.uz.service.ProfileService" autowire="byName"/>
+
+
+    <bean name="studentBookService" class="dasturlash.uz.service.StudentBookService" autowire="byName"/>
+
+
+    <bean name="bookRepository" class="dasturlash.uz.repository.BookRepository" autowire="byName"/>
+
+
+    <bean name="categoryRepository" class="dasturlash.uz.repository.CategoryRepository"/>
+
+    <bean name="profileRepository" class="dasturlash.uz.repository.ProfileRepository"/>
+
+    <bean name="studentBookRepository" class="dasturlash.uz.repository.StudentBookRepository" autowire="byName"/>
+
+    <bean name="componentContainer" class="dasturlash.uz.container.ComponentContainer"/>
+
+    <bean name="scannerService" class="dasturlash.uz.util.ScannerService" autowire="byName"/>
+
+</beans>
